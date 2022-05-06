@@ -64,7 +64,7 @@ class ResultViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Name"
         label.font = UIFont(name: "Arial-BoldMT", size: 35)
-        label.textColor = UIColor.label
+        label.textColor = UIColor(named: "LabelNAmeColor")
         return label
     }()
     
@@ -74,7 +74,7 @@ class ResultViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Artist"
         label.font = UIFont(name: "AvenirNext-Regular", size: 20)
-        label.textColor = UIColor.label
+        label.textColor = UIColor(named: "ArtistNameTime")
         return label
     }()
     
@@ -157,7 +157,7 @@ class ResultViewController: UIViewController {
         label.text = "00 : 00"
         label.textAlignment = .left
         label.font = UIFont(name: "AvenirNext-Regular", size: 15)
-        label.textColor = UIColor.label
+        label.textColor = UIColor(named: "ArtistNameTime")
         return label
     }()
     
@@ -168,7 +168,7 @@ class ResultViewController: UIViewController {
         label.text = "00 : 00"
         label.textAlignment = .right
         label.font = UIFont(name: "AvenirNext-Regular", size: 15)
-        label.textColor = UIColor.label
+        label.textColor = UIColor(named: "ArtistNameTime")
         return label
     }()
     
@@ -228,9 +228,9 @@ class ResultViewController: UIViewController {
         configure()
     }
     
-    
+       
     func setNavigation() {
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor(named: "ViewColor")
         
         
         title = "Music"
